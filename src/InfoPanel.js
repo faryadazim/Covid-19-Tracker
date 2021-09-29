@@ -31,10 +31,10 @@ export default function InfoPanel() {
 
               <div
                 style={{
-                  height: "69.5%",
+                  height: "64.5%",
                   width: "98%",
                   margin: "auto auto",
-                  marginTop: "22px",
+                  marginTop: "29px",
                 }}
               >
                 <Chart />
