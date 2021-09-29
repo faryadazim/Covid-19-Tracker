@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+::-webkit-scrollbar {
+  width: 12px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: rgb(31, 31, 31);
+}
+::-webkit-scrollbar-track {
+  background-color: #646464;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: rgb(31, 31, 31);
+  border-radius: 0px;
+}
+::-webkit-scrollbar-corner {
+  background-color: #646464;
+}
+::-webkit-resizer {
+  background-color: #666;
+}
+/* Scrol bar  */
+
+.main-container {
+  /* background-color: rgb(13, 19, 10);
+  height: 100vh; */
+  height: 100vh;
+}
+.main-container-major {
+  /* background-color: rgb(81, 255, 0); */
+  height: 96.8vh;
+}
+.main-container-sideBar {
+  background-color: rgb(196, 32, 27);
+  height: 100vh;
+}
+.sliderMain {
+  border-radius: 0 !important;
+  height: 100%;
+  width: 100%;
+  padding: 2px 3px;
+}
+
+/* custom-hard code  */
+.m-0 {
+  margin: 0 !important;
+}
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.m-1 {
+  margin: 6px !important;
+}
+.mx-1 {
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+.my-1 {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+.m-2 {
+  margin: 12px !important;
+}
+.mx-2 {
+  margin-left: 12px !important;
+  margin-right: 12px !important;
+}
+.my-2 {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+.border-none {
+  border: 0 !important;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 12px 4px !important;
+  color: azure !important;
+  height: 2px !important;
+}
+.css-1t29gy6-MuiToolbar-root {
+  min-height: 51px !important;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  min-height: 1em !important;
+}
+.Paper-style {
+  /* background-color: #1976d2 !important; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  color: white !important;
+  padding-left: 34px;
+}
