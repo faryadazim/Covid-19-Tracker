@@ -112,6 +112,9 @@ html {
 .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
   min-height: 1em !important;
 }
+.css-qiwgdb {
+  padding: 8.5px 14px !important;
+}
 .Paper-style {
   /* background-color: #1976d2 !important; */
   display: flex;
