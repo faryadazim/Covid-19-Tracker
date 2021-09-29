@@ -32,9 +32,9 @@ export default function Variants() {
             style={{ height: "150px", backgroundColor: "#1976d2 " }}
             className="Paper-style"
           >
-            <h2>Total Cases</h2>
-            <h1>+ 4500 New Cases</h1>
-            <h4>45000000</h4>
+            <h2>Cases</h2>
+            <h1>+ 4500.4K</h1>
+            <h4>Total : 450.1m</h4>
           </Paper>
         </Grid>
         <Grid
@@ -49,9 +49,9 @@ export default function Variants() {
             style={{ height: "150px", backgroundColor: "green" }}
             className="Paper-style"
           >
-            <h2>Recovered Cases</h2>
-            <h1>+ 4500 New Cases</h1>
-            <h4>45000000</h4>
+            <h2>Recovered</h2>
+            <h1>+ 4500.4K</h1>
+            <h4>Total : 450.1m</h4>
           </Paper>
         </Grid>
         <Grid
@@ -66,9 +66,9 @@ export default function Variants() {
             style={{ height: "150px", backgroundColor: "red" }}
             className="Paper-style"
           >
-            <h2>Died Cases</h2>
-            <h1>+ 4500 New Cases</h1>
-            <h4>45000000</h4>
+            <h2>Deaths</h2>
+            <h1>+ 4500.4K</h1>
+            <h4>Total : 450.1m</h4>
           </Paper>
         </Grid>
       </Grid>

@@ -116,5 +116,58 @@ html {
   justify-content: space-around;
   /* align-items: center; */
   color: white !important;
+  font-family: sans-serif;
+  padding: 18px 12px;
+  padding-left: 10px;
+}
+.Paper-style h2 {
+  margin-top: 3px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.Paper-style h1 {
+  margin-top: 3px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.Paper-style h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.Paper-style {
+  /* background-color: #1976d2 !important; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  color: white !important;
   padding-left: 34px;
+}
+.footer-div {
+  height: 21%;
+  margin-top: 24px;
+
+  border-top: 1px solid #1976d2;
+  border-bottom: 1px solid #1976d2;
+  padding: 15px 0px;
+  text-align: center;
+  color: #1976d2;
+}
+.footer-div h4 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin-bottom: 3px;
+  letter-spacing: 5px;
+}
+.footer-div p {
+  font-size: 12px;
+
+  font-family: sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

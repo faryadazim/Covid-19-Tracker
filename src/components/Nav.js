@@ -75,7 +75,7 @@ export default function Nav() {
               letterSpacing: "4px",
             }}
           >
-            COVID 19 TRACKER BY FARYAD AZIM
+            COVID 19 TRACKER
           </Typography>
           <NavSelector />
         </Toolbar>

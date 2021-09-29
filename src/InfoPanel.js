@@ -4,6 +4,7 @@ import Grid from "@mui/material/Grid";
 import SideBar from "./pages/SideBar";
 import Nav from "./components/Nav";
 import Card from "./components/Card";
+import Chart from "./components/Chart";
 
 export default function InfoPanel() {
   return (
@@ -31,13 +32,20 @@ export default function InfoPanel() {
               <div
                 style={{
                   height: "69.5%",
-                  backgroundColor: "red",
                   width: "98%",
                   margin: "auto auto",
                   marginTop: "22px",
                 }}
               >
-                helho
+                <Chart />
+                <div className="footer-div">
+                  <h4> Covid 19 Tracker Pilot Project </h4>
+                  <p>
+                    Devolped by Faryad Azim Under the shadow of Sir Zia Khan ,
+                    Mohsin Khalid,Ammir Pinger, Amin Alam , Bashir Aziz and
+                    more...
+                  </p>
+                </div>
               </div>
             </div>
           </div>
