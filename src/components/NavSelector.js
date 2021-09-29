@@ -1,10 +1,9 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
+import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import { positions } from "@mui/system";
 
 export default function NavSelector() {
   const [age, setAge] = React.useState("");
@@ -14,31 +13,20 @@ export default function NavSelector() {
   };
 
   return (
-    <Box sx={{ minWidth: 250, padding: 0 }}>
-      <FormControl fullWidth style={{ borderColor: "white" }}>
-        <InputLabel
-          id="demo-simple-select-label"
-          style={{
-            color: "white",
-            fontSize: "12px",
-            // position: "relative",
-            // top: "5px",
-          }}
-        >
-          Age
-        </InputLabel>
+    <div>
+      <FormControl sx={{ m: 1, minWidth: 200, border: 0 }}>
         <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
           value={age}
-          label="Age"
           onChange={handleChange}
+          displayEmpty
+          inputProps={{ "aria-label": "Without label" }}
         >
+          <MenuItem value="">World Wide</MenuItem>
           <MenuItem value={10}>Ten</MenuItem>
           <MenuItem value={20}>Twenty</MenuItem>
           <MenuItem value={30}>Thirty</MenuItem>
         </Select>
       </FormControl>
-    </Box>
+    </div>
   );
 }

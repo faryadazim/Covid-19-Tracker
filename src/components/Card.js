@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-
+// import image from "/coronavirus_cdc.jpeg";
 export default function Variants() {
   return (
     <Box
@@ -69,6 +69,10 @@ export default function Variants() {
             <h2>Deaths</h2>
             <h1>+ 4500.4K</h1>
             <h4>Total : 450.1m</h4>
+            {/* <img
+              // src={`${process.env.PUBLIC_URL}/img/coronavirus_cdc.jpeg`}
+              alt="nanan"
+            /> */}
           </Paper>
         </Grid>
       </Grid>

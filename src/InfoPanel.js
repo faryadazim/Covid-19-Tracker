@@ -10,7 +10,7 @@ export default function InfoPanel() {
   return (
     <Box className="main-container">
       <Grid container>
-        <Grid item xs={12} md={9} className="main-container-major">
+        <Grid item xs={12} md={8} lg={9} className="main-container-major">
           <Nav />
 
           <div
@@ -53,7 +53,8 @@ export default function InfoPanel() {
         <Grid
           item
           xs={12}
-          md={3}
+          md={4}
+          lg={3}
           className="main-container-sideBar"
           style={{ backgroundColor: "#1976d2" }}
         >

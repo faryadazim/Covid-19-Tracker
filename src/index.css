@@ -115,15 +115,17 @@ html {
 .css-qiwgdb {
   padding: 8.5px 14px !important;
 }
+
 .Paper-style {
-  /* background-color: #1976d2 !important; */
+  /* background-image: url("/coronavirus_cdc.jpeg"); */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  font-family: sans-serif;
   /* align-items: center; */
   color: white !important;
-  font-family: sans-serif;
-  padding: 18px 12px;
+  height: 150px;
+  padding-left: 34px;
   padding-left: 10px;
 }
 .Paper-style h2 {
@@ -143,15 +145,7 @@ html {
   font-weight: 500;
   font-family: sans-serif;
 }
-.Paper-style {
-  /* background-color: #1976d2 !important; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* align-items: center; */
-  color: white !important;
-  padding-left: 34px;
-}
+
 .footer-div {
   height: 21%;
   margin-top: 24px;
@@ -176,4 +170,8 @@ html {
   font-family: sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  min-height: 0.7em !important;
 }
