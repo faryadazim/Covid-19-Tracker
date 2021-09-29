@@ -16,7 +16,7 @@ export default function InfoPanel() {
           <div
             style={{
               backgroundColor: "white",
-              height: "95%",
+              height: "93%",
               padding: "8px",
             }}
           >

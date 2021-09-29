@@ -14,7 +14,7 @@ export default function NavSelector() {
 
   return (
     <div>
-      <FormControl sx={{ m: 0.8, minWidth: 200, border: 0 }}>
+      <FormControl sx={{ m: 1, minWidth: 200, border: 0 }}>
         <Select
           value={age}
           onChange={handleChange}
