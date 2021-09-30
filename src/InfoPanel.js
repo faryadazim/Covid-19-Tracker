@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import SideBar from "./pages/SideBar";
@@ -7,6 +7,17 @@ import Card from "./components/Card";
 import Chart from "./components/Chart";
 
 export default function InfoPanel() {
+  const [worldWide, setworldWide] = useState();
+  useEffect(() => {
+    async function fetchFunction() {
+      const response = await fetch(`https://disease.sh/v3/covid-19/countries`);
+      const json = await response.json();
+      setworldWide(json);
+    }
+    console.log(worldWide);
+    fetchFunction();
+  }, []);
+
   return (
     <Box className="main-container">
       <Grid container>
