@@ -26,28 +26,31 @@ export default function InfoPanel() {
           <Nav />
 
           <div
-            style={{
-              backgroundColor: "white",
-              height: "93%",
-              padding: "8px",
-            }}
+            className="card-outside"
+            // style={{
+            //   backgroundColor: "white",
+            //   height: "93%",
+            //   padding: "8px",
+            // }}
           >
             <div
-              style={{
-                border: "1px solid #1976d2",
-                height: "100%",
-                width: "100%",
-              }}
+              className="card-insider"
+              // style={{
+              //   border: "1px solid #1976d2",
+              //   height: "100%",
+              //   width: "100%",
+              // }}
             >
               <Card />
 
               <div
-                style={{
-                  height: "64.5%",
-                  width: "98%",
-                  margin: "auto auto",
-                  marginTop: "29px",
-                }}
+                className="chart-insider"
+                // style={{
+                //   height: "64.5%",
+                //   width: "98%",
+                //   margin: "auto auto",
+                //   marginTop: "29px",
+                // }}
               >
                 <Chart />
                 <div className="footer-div">
@@ -67,8 +70,7 @@ export default function InfoPanel() {
           xs={12}
           md={4}
           lg={3}
-          className="main-container-sideBar "
-          style={{ backgroundColor: "#1976d2" }}
+          className="main-container-sideBar bg-color"
         >
           <SideBar />
         </Grid>

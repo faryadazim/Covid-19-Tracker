@@ -175,3 +175,24 @@ html {
 .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
   min-height: 0.7em !important;
 }
+
+.card-outside {
+  background-color: white !important;
+  height: 93% !important;
+  padding: 8px !important;
+}
+.card-insider {
+  -webkit-column-break-before: 1px solid #1976d2 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.bg-color {
+  background-color: #1976d2 !important;
+}
+
+.chart-insider {
+  height: 64.5%;
+  width: 98%;
+  margin: auto auto;
+  margin-top: 29px;
+}
