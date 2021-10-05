@@ -67,7 +67,7 @@ export default function InfoPanel() {
           xs={12}
           md={4}
           lg={3}
-          className="main-container-sideBar"
+          className="main-container-sideBar "
           style={{ backgroundColor: "#1976d2" }}
         >
           <SideBar />
