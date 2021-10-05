@@ -33,7 +33,7 @@ export default function Variants() {
             className="Paper-style"
           >
             <h2>Cases</h2>
-            <h1>+ 4500.4K</h1>
+            <h1>+ 450n0.4K</h1>
             <h4>Total : 450.1m</h4>
           </Paper>
         </Grid>
@@ -66,9 +66,28 @@ export default function Variants() {
             style={{ height: "150px", backgroundColor: "red" }}
             className="Paper-style"
           >
-            <h2>Deaths</h2>
-            <h1>+ 4500.4K</h1>
-            <h4>Total : 450.1m</h4>
+            <h2 style={{ paddingBottom: "2px", paddingTop: "4px" }}>Deaths</h2>
+            <h1 style={{ paddingBottom: "6px", paddingTop: "6px" }}>
+              + 4500.4K
+            </h1>
+            <h4
+              style={{
+                marginTop: "auto",
+                paddingBottom: "2px",
+                paddingTop: "2px",
+              }}
+            >
+              Total : 450.1m
+            </h4>
+            <h4
+              style={{
+                paddingBottom: "6px",
+                paddingTop: "2px",
+                color: "silver",
+              }}
+            >
+              23 mon,ocr 2020
+            </h4>
             {/* <img
               // src={`${process.env.PUBLIC_URL}/img/coronavirus_cdc.jpeg`}
               alt="nanan"

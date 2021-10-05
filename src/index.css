@@ -120,7 +120,7 @@ html {
   /* background-image: url("/coronavirus_cdc.jpeg"); */
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   font-family: sans-serif;
   /* align-items: center; */
   color: white !important;

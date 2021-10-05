@@ -5,17 +5,18 @@ import SideBar from "./pages/SideBar";
 import Nav from "./components/Nav";
 import Card from "./components/Card";
 import Chart from "./components/Chart";
+import { fetchAPI } from "./API/fetchAPI";
 
 export default function InfoPanel() {
-  const [worldWide, setworldWide] = useState();
+  // const [worldWide, setworldWide] = useState();
   useEffect(() => {
-    async function fetchFunction() {
-      const response = await fetch(`https://disease.sh/v3/covid-19/countries`);
-      const json = await response.json();
-      setworldWide(json);
-    }
-    console.log(worldWide);
-    fetchFunction();
+    // async function fetchFunction() {
+    //   const response = await fetch(`https://disease.sh/v3/covid-19/countries`);
+    //   const json = await response.json();
+    //   setworldWide(json);
+    // }
+    // console.log(worldWide);
+    fetchAPI();
   }, []);
 
   return (
