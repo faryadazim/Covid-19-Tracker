@@ -8,50 +8,28 @@ import Chart from "./components/Chart";
 import { fetchAPI } from "./API/fetchAPI";
 
 export default function InfoPanel() {
-  // const [worldWide, setworldWide] = useState();
+  const [rawData, setrawData] = useState([]);
   useEffect(() => {
-    // async function fetchFunction() {
-    //   const response = await fetch(`https://disease.sh/v3/covid-19/countries`);
-    //   const json = await response.json();
-    //   setworldWide(json);
-    // }
-    // console.log(worldWide);
-    fetchAPI();
+    async function foo() {
+      try {
+        let data = await fetchAPI();
+        setrawData(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    foo();
   }, []);
-
+  // console.log(rawData);
   return (
     <Box className="main-container">
       <Grid container>
         <Grid item xs={12} md={8} lg={9} className="main-container-major">
           <Nav />
-
-          <div
-            className="card-outside"
-            // style={{
-            //   backgroundColor: "white",
-            //   height: "93%",
-            //   padding: "8px",
-            // }}
-          >
-            <div
-              className="card-insider"
-              // style={{
-              //   border: "1px solid #1976d2",
-              //   height: "100%",
-              //   width: "100%",
-              // }}
-            >
+          <div className="card-outside">
+            <div className="card-insider">
               <Card />
-
-              <div
-                className="chart-insider"
-                // style={{
-                //   height: "64.5%",
-                //   width: "98%",
-                //   margin: "auto auto",
-                //   marginTop: "29px",
-                // }}
-              >
+              <div className="chart-insider">
                 <Chart />
                 <div className="footer-div">
                   <h4> Covid 19 Tracker Pilot Project </h4>
@@ -72,7 +50,7 @@ export default function InfoPanel() {
           lg={3}
           className="main-container-sideBar bg-color"
         >
-          <SideBar />
+          <SideBar data={rawData} />
         </Grid>
       </Grid>
     </Box>

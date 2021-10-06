@@ -1,31 +1,25 @@
 import * as React from "react";
 // import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-// import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import NativeSelect from "@mui/material/NativeSelect";
 
 export default function NavSelector() {
-  const [age, setAge] = React.useState("");
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const handleChanger = (e) => {
+    console.log(e);
   };
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 200, border: 0 }}>
-        <Select
-          value={age}
-          onChange={handleChange}
-          displayEmpty
-          inputProps={{ "aria-label": "Without label" }}
-        >
-          <MenuItem value="">World Wide</MenuItem>
-          <MenuItem value={10}>Ten</MenuItem>
-          <MenuItem value={20}>Twenty</MenuItem>
-          <MenuItem value={30}>Thirty</MenuItem>
-        </Select>
+      <FormControl
+        sx={{ m: 1, minWidth: 200, border: 0 }}
+        className="formControl"
+      >
+        <NativeSelect onChange={(e) => handleChanger(e.target.value)}>
+          <option> Global </option>
+          <option> new </option>
+          <option> qordl </option>
+        </NativeSelect>
       </FormControl>
     </div>
   );

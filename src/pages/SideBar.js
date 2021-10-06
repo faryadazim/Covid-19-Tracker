@@ -13,9 +13,8 @@ import TableRow from "@mui/material/TableRow";
 // import Paper from "@mui/material/Paper";
 // import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-function Row({ row }) {
+function Row({ rawData }) {
   const [open, setOpen] = React.useState(false);
-
   return (
     <React.Fragment>
       <TableRow>
@@ -25,19 +24,21 @@ function Row({ row }) {
           onClick={() => setOpen(!open)}
           style={{ padding: "12px 12px", color: "white" }}
         >
-          {row.name}
+          {rawData.country}
+          {/* {row.name} */}
         </TableCell>
         <TableCell
           align="right"
           style={{ padding: "12px 12px", color: "white" }}
         >
-          {row.class}
+          {rawData.cases}
         </TableCell>
         <TableCell
           align="right"
           style={{ padding: "12px 12px", color: "white" }}
         >
-          {row.cases}
+          {/* hh */}
+          {rawData.recovered}
         </TableCell>
       </TableRow>
       <TableRow>
@@ -80,11 +81,14 @@ function Row({ row }) {
   );
 }
 
-export default function SideBar() {
-  const [row, setrow] = useState([
-    { name: "Ali", class: "new", cases: 34 },
-    { name: "khan", class: "new", cases: 34 },
-  ]);
+export default function SideBar({ data }) {
+  // const [country, setcountry] = useState('')
+
+  // console.log(data);
+  // data.map((item) => {
+  //   console.log(item.country);
+  //   setcountry()
+  // });
   return (
     <TableContainer
       // component={Paper}
@@ -117,8 +121,8 @@ export default function SideBar() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {row.map((item, index) => (
-            <Row key={index} row={item} />
+          {data.map((item, index) => (
+            <Row key={index} rawData={item} />
           ))}
         </TableBody>
       </Table>
