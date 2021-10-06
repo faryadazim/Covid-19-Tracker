@@ -1,10 +1,9 @@
 import * as React from "react";
 // import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 
-export default function NavSelector() {
+export default function NavSelector({ data }) {
   const handleChanger = (e) => {
     console.log(e);
   };
@@ -17,8 +16,9 @@ export default function NavSelector() {
       >
         <NativeSelect onChange={(e) => handleChanger(e.target.value)}>
           <option> Global </option>
-          <option> new </option>
-          <option> qordl </option>
+          {data.map((country) => (
+            <option> {country.country} </option>
+          ))}
         </NativeSelect>
       </FormControl>
     </div>

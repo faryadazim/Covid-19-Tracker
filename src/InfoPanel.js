@@ -25,7 +25,7 @@ export default function InfoPanel() {
     <Box className="main-container">
       <Grid container>
         <Grid item xs={12} md={8} lg={9} className="main-container-major">
-          <Nav />
+          <Nav data={rawData} />
           <div className="card-outside">
             <div className="card-insider">
               <Card />
