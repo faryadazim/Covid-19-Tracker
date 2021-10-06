@@ -6,8 +6,10 @@ import Nav from "./components/Nav";
 import Card from "./components/Card";
 import Chart from "./components/Chart";
 import { fetchAPI } from "./API/fetchAPI";
+import { fetchAPIWorld } from "./API/fetchAPI";
 
 export default function InfoPanel() {
+  const [cardValue, setcardValue] = useState({});
   const [rawData, setrawData] = useState([]);
   useEffect(() => {
     async function foo() {
@@ -19,16 +21,28 @@ export default function InfoPanel() {
       }
     }
     foo();
+    async function worldRecord() {
+      try {
+        let data = await fetchAPIWorld();
+        setcardValue(data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    worldRecord();
   }, []);
+  const handleChanger = (e) => {
+    console.log(e);
+  };
   // console.log(rawData);
   return (
     <Box className="main-container">
       <Grid container>
         <Grid item xs={12} md={8} lg={9} className="main-container-major">
-          <Nav data={rawData} />
+          <Nav data={rawData} handleChanger={handleChanger} />
           <div className="card-outside">
             <div className="card-insider">
-              <Card />
+              <Card cardValue={cardValue} />
               <div className="chart-insider">
                 <Chart />
                 <div className="footer-div">

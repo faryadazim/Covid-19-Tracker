@@ -3,7 +3,8 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 // import image from "/coronavirus_cdc.jpeg";
-export default function Variants() {
+export default function Variants({ cardValue }) {
+  console.log(cardValue.cases);
   return (
     <Box
       sx={{
@@ -33,8 +34,8 @@ export default function Variants() {
             className="Paper-style"
           >
             <h2>Cases</h2>
-            <h1>+ 450n0.4K</h1>
-            <h4>Total : 450.1m</h4>
+            <h1>+ {cardValue.todayCases}</h1>
+            <h4>Total : {cardValue.cases}</h4>
           </Paper>
         </Grid>
         <Grid
@@ -50,8 +51,8 @@ export default function Variants() {
             className="Paper-style"
           >
             <h2>Recovered</h2>
-            <h1>+ 4500.4K</h1>
-            <h4>Total : 450.1m</h4>
+            <h1>+ {cardValue.todayRecovered}</h1>
+            <h4>Total : {cardValue.recovered}</h4>
           </Paper>
         </Grid>
         <Grid
@@ -68,7 +69,7 @@ export default function Variants() {
           >
             <h2 style={{ paddingBottom: "2px", paddingTop: "4px" }}>Deaths</h2>
             <h1 style={{ paddingBottom: "6px", paddingTop: "6px" }}>
-              + 4500.4K
+              + {cardValue.todayDeaths}
             </h1>
             <h4
               style={{
@@ -77,7 +78,7 @@ export default function Variants() {
                 paddingTop: "2px",
               }}
             >
-              Total : 450.1m
+              Total : {cardValue.deaths}
             </h4>
             <h4
               style={{

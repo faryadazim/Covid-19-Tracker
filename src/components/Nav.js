@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavSelector from "./NavSelector";
 
-export default function Nav({ data }) {
+export default function Nav({ data, handleChanger }) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -35,7 +35,7 @@ export default function Nav({ data }) {
           >
             COVID 19 TRACKER
           </Typography>
-          <NavSelector data={data} />
+          <NavSelector data={data} handleChanger={handleChanger} />
         </Toolbar>
       </AppBar>
     </Box>

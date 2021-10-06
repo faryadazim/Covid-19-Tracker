@@ -3,11 +3,7 @@ import * as React from "react";
 import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
 
-export default function NavSelector({ data }) {
-  const handleChanger = (e) => {
-    console.log(e);
-  };
-
+export default function NavSelector({ data, handleChanger }) {
   return (
     <div>
       <FormControl
