@@ -11,6 +11,7 @@ import { fetchAPIWorld } from "./API/fetchAPI";
 export default function InfoPanel() {
   const [cardValue, setcardValue] = useState({});
   const [rawData, setrawData] = useState([]);
+  const [global, setGlobal] = useState(rawData);
 
   useEffect(() => {
     async function foo() {
@@ -26,6 +27,7 @@ export default function InfoPanel() {
       try {
         let data = await fetchAPIWorld();
         setcardValue(data);
+        setGlobal(data);
       } catch (error) {
         console.log(error);
       }
@@ -35,10 +37,14 @@ export default function InfoPanel() {
   const handleChanger = (e) => {
     console.log(e, "countryName");
     rawData.map((country) => {
-      console.log(country);
+      if (e === country.country) {
+        setcardValue(country);
+      }
+      if (e === "Global") {
+        setcardValue(global);
+      }
     });
   };
-  // console.log(rawData);
   return (
     <Box className="main-container">
       <Grid container>
