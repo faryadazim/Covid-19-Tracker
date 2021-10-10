@@ -35,7 +35,6 @@ export default function InfoPanel() {
     worldRecord();
   }, []);
   const handleChanger = (e) => {
-    console.log(e, "countryName");
     rawData.map((country) => {
       if (e === country.country) {
         setcardValue(country);
@@ -54,7 +53,7 @@ export default function InfoPanel() {
             <div className="card-insider">
               <Card cardValue={cardValue} />
               <div className="chart-insider">
-                <Chart />
+                <Chart datas={cardValue} />
                 <div className="footer-div">
                   <h4> Covid 19 Tracker Pilot Project </h4>
                   <p>
