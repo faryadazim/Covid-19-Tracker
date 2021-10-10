@@ -11,6 +11,7 @@ import { fetchAPIWorld } from "./API/fetchAPI";
 export default function InfoPanel() {
   const [cardValue, setcardValue] = useState({});
   const [rawData, setrawData] = useState([]);
+
   useEffect(() => {
     async function foo() {
       try {
@@ -32,7 +33,10 @@ export default function InfoPanel() {
     worldRecord();
   }, []);
   const handleChanger = (e) => {
-    console.log(e);
+    console.log(e, "countryName");
+    rawData.map((country) => {
+      console.log(country);
+    });
   };
   // console.log(rawData);
   return (

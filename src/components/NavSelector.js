@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 // import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import NativeSelect from "@mui/material/NativeSelect";
@@ -12,8 +12,8 @@ export default function NavSelector({ data, handleChanger }) {
       >
         <NativeSelect onChange={(e) => handleChanger(e.target.value)}>
           <option> Global </option>
-          {data.map((country) => (
-            <option> {country.country} </option>
+          {data.map((country, index) => (
+            <option key={index}>{country.country}</option>
           ))}
         </NativeSelect>
       </FormControl>

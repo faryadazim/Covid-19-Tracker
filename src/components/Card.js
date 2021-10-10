@@ -2,9 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-// import image from "/coronavirus_cdc.jpeg";
 export default function Variants({ cardValue }) {
-  console.log(cardValue.cases);
   return (
     <Box
       sx={{
@@ -89,10 +87,6 @@ export default function Variants({ cardValue }) {
             >
               23 mon,ocr 2020
             </h4>
-            {/* <img
-              // src={`${process.env.PUBLIC_URL}/img/coronavirus_cdc.jpeg`}
-              alt="nanan"
-            /> */}
           </Paper>
         </Grid>
       </Grid>
